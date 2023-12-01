@@ -65,7 +65,7 @@ def fetch_content(url: str) -> List[Dict[str, str]]:
     html = urlopen(url).read().decode('utf-8')
     soup = BeautifulSoup(html, 'html.parser')
 
-    content_items = soup.find_all('div', class_='post-wrap')
+    content_items = soup.find_all('div', class_='post')
 
     content_info_list = []
 

@@ -1,12 +1,15 @@
 # AAU Website Content Fetcher
 
-A Python module for fetching content data from the Addis Ababa University (AAU) website.
+A Python module for fetching `news` and `announcements` from the Addis Ababa University (AAU) website.
 
 ## Overview
 
-This module provides a function, `fetch_content`, which takes a URL as input and retrieves content information from the AAU website. It is designed to extract details such as titles, links, sample text, image links, and dates posted from the website's content.
+This module provides a function, `fetch_content`, which takes a URL as input and retrieves content information from the AAU website. It is designed to extract details such as titles, links, sample text, image links, and dates posted from the website's `news and announcements`. 
 
-## Usage
+### Usage
+
+Passing URL `http://www.aau.edu.et/` or `http://www.aau.edu.et/page/{anyinteger}` loads the news, while passing URL `http://www.aau.edu.et/blog/category/announcements/` or `http://www.aau.edu.et/blog/category/announcements/page/{anyinteger}` loads announcements.
+
 
 ```python
 from fetch import fetch_content
